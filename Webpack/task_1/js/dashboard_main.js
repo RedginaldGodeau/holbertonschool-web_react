@@ -12,11 +12,11 @@ const elements = [
 let count = 0;
 
 function updateCounter() {
-    $("#count").text(++count + " clicks on the button")
+    $("#count").text(++count + " clicks on the button");
 }
 
 $("document").ready(() => {
     const debouncedClick = debounce(updateCounter, 500);
+    $("button").click(debouncedClick);
     $("body").append(elements.map((v, i) => v).join(""));
-    $("button").click(debouncedClick)
 })
