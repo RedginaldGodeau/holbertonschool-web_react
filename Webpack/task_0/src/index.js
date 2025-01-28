@@ -7,5 +7,5 @@ const paragraph = [
 ]
 
 $("document").ready(() => {
-    $("body").html(paragraph.map((v, i) => `<p> ${v} </p>`).join(""));
+    $("body").append(paragraph.map((v, i) => `<p> ${v} </p>`).join(""));
 })
