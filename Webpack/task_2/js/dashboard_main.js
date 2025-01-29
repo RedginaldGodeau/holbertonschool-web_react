@@ -1,7 +1,7 @@
 import $ from "jquery";
 import debounce from 'lodash/debounce';
 
-import '../css/main.css'
+import '../css/main.css';
 
 const elements = [
     "<div id='logo'></div>",
@@ -22,4 +22,4 @@ $(document).ready(() => {
     const debouncedClick = debounce(updateCounter, 500);
     $("body").append(elements.map((v, i) => v).join(""));
     $("button").click(debouncedClick);
-})
+});
