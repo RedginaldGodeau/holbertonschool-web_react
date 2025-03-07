@@ -1,6 +1,8 @@
 import $ from "jquery";
 import debounce from 'lodash/debounce';
 
+import './css/main.css'
+
 const elements = [
     "<p>Holberton Dashboard</p>",
     "<p>Dashboard data for the students</p>",
