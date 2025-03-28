@@ -1,1 +1,1 @@
-readme of the other directory for inline styling project in React. using Aphrodite.     d
+REACT INLINE STLYLING
